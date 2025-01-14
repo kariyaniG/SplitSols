@@ -28,8 +28,8 @@ const Dashboard = () => {
     return (
       <div className="flex items-center justify-center min-h-[80vh]">
         <div className="text-center max-w-lg mx-auto p-8 rounded-2xl bg-gradient-to-b from-purple-500/10 to-transparent border border-purple-500/20">
-          <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Connect Your Wallet</h2>
-          <p className="text-gray-400 mb-6">Please connect your wallet to access your dashboard and manage your expenses</p>
+          <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-700 to-pink-800 bg-clip-text text-transparent">Connect Your Wallet</h2>
+          <p className="text-gray-700 mb-6">Please connect your wallet to access your dashboard and manage your expenses</p>
         </div>
       </div>
     );
