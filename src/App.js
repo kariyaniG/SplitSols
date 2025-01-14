@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import GroupDetails from './pages/GroupDetails';
 import Profile from './pages/Profile';
 import { WalletProvider } from './context/WalletContext';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <BrowserRouter>
         <div className="min-h-screen bg-gradient-to-b from-gray-900 via-purple-900/20 to-black text-white">
           <Navbar />
-          <main className="pt-20"> {/* Added padding-top to account for fixed navbar */}
+          <main className="pt-20 flex-grow"> {/* Added padding-top to account for fixed navbar */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/dashboard" element={<Dashboard />} />
@@ -21,6 +22,7 @@ const App = () => {
               <Route path="/profile" element={<Profile />} />
             </Routes>
           </main>
+          <Footer/>
         </div>
       </BrowserRouter>
     </WalletProvider>
